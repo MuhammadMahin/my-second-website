@@ -56,7 +56,7 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-#section-heading{
+.section-heading{
     font-size: 52px;
     font-weight: 700;
     
@@ -194,4 +194,38 @@ footer{
     margin-top: 17px;
 }
 
- 
+ /* medi query */
+@media only screen and (max-width: 688px) {
+    body{
+         width: 100%;
+    }
+    .products, .header-name{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .products{
+         justify-content: center;
+    }
+    .header-name{
+        text-align: center;
+    }
+   
+    .section-heading{
+
+       text-align: center;
+    }
+    .header-menu{
+        display: none;
+    }
+    .creative, .first-section, .logos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: row;
+        justify-content: center;
+      
+    
+         
+    }
+}
+
+  
